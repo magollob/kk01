@@ -809,26 +809,29 @@ export default function LandingPage() {
         </div>
       )}
 
-      <section className="relative z-10 min-h-screen flex flex-col items-center justify-start px-4 pt-8 pb-8 md:pt-12 md:pb-12">
-        <div className="mb-4 md:mb-6">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo11-cuksuwu8ou7MvjNmTEi8GVf7KXM1ja.png"
-            alt="Smart Ilha Logo"
-            width={200}
-            height={80}
-            className="h-14 md:h-20 w-auto"
-          />
-        </div>
+      {/* Banner Hero */}
+      <section className="relative z-10 w-full">
+        {/* Mobile banner */}
+        <Image
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/headmobile-efZODV98yAqlTyhDaMQF2papB3eMYi.webp"
+          alt="Lançamentos 2026 Microwear - Os Novos Series 11"
+          width={800}
+          height={1200}
+          className="w-full h-auto block md:hidden"
+          priority
+        />
+        {/* Desktop banner */}
+        <Image
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/headdesktop-0bNcEhuYLoBvJCzIjwPx1LQQc2e4Xc.webp"
+          alt="Lançamentos 2026 Microwear - Os Novos Series 11"
+          width={1920}
+          height={680}
+          className="w-full h-auto hidden md:block"
+          priority
+        />
+      </section>
 
-        <div className="text-center mb-4 md:mb-6">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-orange-500 mb-1 tracking-tight uppercase drop-shadow-lg">
-            SEU SMARTWATCH
-          </h1>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight uppercase">
-            IDEAL ESTÁ A UM CLIQUE!
-          </h2>
-        </div>
-
+      <section className="relative z-10 flex flex-col items-center justify-start px-4 pt-6 pb-8 md:pt-10 md:pb-12">
         <button
           onClick={scrollToContent}
           className="animate-bounce text-orange-500 hover:text-orange-400 transition-colors mb-6 md:mb-8"
